@@ -1,0 +1,19 @@
+DECLARE InputString As String
+DECLARE NextChar As Character
+DECLARE OutputString As String
+DECLARE Count As Integer
+
+InputString = ' '
+OutString = ' '
+NextChar = ' '
+Counter = 0
+
+Output = "Please enter the string to be reserved: "
+Input InString
+
+For Counter = LEN(InString) To 1 Step-1
+    NextChar = MID(InString,COUNTER,1)
+    OutString = OutString & NextChar
+Next
+
+Output OutString
